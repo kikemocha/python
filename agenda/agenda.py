@@ -71,9 +71,9 @@ while bucle == 1:
                     telefono = input("Escribe el número = ")
                     data.append(add_contacto(nombre,telefono))
                     print("Usuario añadido correctamente")
+                    print(nombre, " ---- ", telefono)
                     with open("agenda.json", "w") as agenda:
                         datos = json.dump(data, agenda, indent= 2)
-                    print(data)
                     print("\n \n \n")
                     salida = input("Pulsa Enter para salir al menú")
                 elif num == 2:
